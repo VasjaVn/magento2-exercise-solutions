@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>MY TEST TITLE</title>
+    </head>
+    <body>
+        <referenceContainer name="content.top">
+            <referenceBlock name="u3m8_content_top_link_custom_page" remove="true"/>
+
+            <block class="Magento\Framework\View\Element\Template" name="u3m8_content_top_link_home_page" template="UnitThree_Module8::link_home_page.phtml" before="u3m8_content_top"/>
+
+            <block class="UnitThree\Module8\Block\Style" name="u3m8_content_top" template="UnitThree_Module8::template.phtml">
+                <arguments>
+                    <argument name="background_color" xsi:type="string">lightskyblue</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

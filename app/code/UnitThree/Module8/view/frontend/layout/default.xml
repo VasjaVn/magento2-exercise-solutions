@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content.top">
+            <!-- 3.8.7 -->
+            <block class="Magento\Framework\View\Element\Template" name="u3m8_content_top_link_custom_page" template="UnitThree_Module8::link_unit3_module8_layout_onepage.phtml"/>
+
+            <block class="Magento\Framework\View\Element\Template" name="u3m8_content_top" template="UnitThree_Module8::template.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
