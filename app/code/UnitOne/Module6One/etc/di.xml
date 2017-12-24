@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="UnitOne\Module6One\Api\ProductRepositoryInterface" type="UnitOne\Module6One\MagentoU\ProductRepository" />
+
+    <type name="UnitOne\Module6One\MagentoU\Test">
+        <arguments>
+            <argument name="justAParameter" xsi:type="string">Hello World!!!</argument>
+
+            <argument name="data" xsi:type="array">
+                <item name="item__module_6_one" xsi:type="string">Test Array Item (MODULE_6_ONE)!!!</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
